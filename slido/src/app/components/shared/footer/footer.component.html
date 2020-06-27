@@ -1,0 +1,32 @@
+<footer class="page-footer font-small blue-grey lighten-5">
+  <div class="footerLinks">
+    <div>
+      <a *ngIf="!isAuth" routerLink="/signup">
+        <mat-icon>perm_identity</mat-icon>
+        Sign Up
+      </a>
+    </div>
+    <div>
+      <a *ngIf="!isAuth" routerLink="/login">
+        <mat-icon>account_circle</mat-icon>
+        Log In
+      </a>
+    </div>
+    <div>
+      <a *ngIf="isAuth" routerLink="/user">
+        <mat-icon>question_answer</mat-icon>
+        Events
+      </a>
+    </div>
+    <div>
+      <a *ngIf="isAuth" [routerLink]="" (click)="logout()" class="logout-link">
+        <mat-icon>eject</mat-icon>
+        Logout
+      </a>
+    </div>
+  </div>
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" routerLink="/home"> Sli.do</a>
+  </div>
+
+</footer>

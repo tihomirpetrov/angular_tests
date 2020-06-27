@@ -1,0 +1,11 @@
+mat-form-field {
+  width: 300px;
+}
+
+form {
+  padding: 20px;
+}
+
+.minheight {
+  min-height: 260px;
+}
